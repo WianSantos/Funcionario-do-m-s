@@ -21,10 +21,47 @@
         src="./src/imagens/bandeirantes.png"
         alt="Logo Bandeirantes"
       />
-      <img class="logos" src="./src/imagens/Deicmar.png" alt="Logo Deicmar" />
+      <img
+      class="logos"
+      src="./src/imagens/Deicmar.png"
+      alt="Logo Bandeirantes"
+    />
+
+
+        <div id="card-container">
+          <div id="card">
+            <button id="close-btn">Close</button>
+            <div>
+              <h2>Sistemas</h2>
+              <select id="sistemas" class="select1">
+                  <option value="">Select an option</option>
+                  <option value="Wian" selected>Wian</option>
+                  <option value="Gabriel">Gabriel</option>
+                  <option value="Iuri">Iuri</option>
+                </select>
+                <h2>Governança</h2>
+                <select class="select2">
+                  <option value="">Select an option</option>
+                  <option value="option1">Grazi</option>
+                  <option value="option2" selected>Lu</option>
+                  <option value="option3">Larissa</option>
+                </select>
+                <h2>Adm</h2>
+                <select class="select3">
+                  <option value="">Select an option</option>
+                  <option value="option1" selected>Erick</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                </select>
+                
+
+          </div>  
+          <button onclick="atualizarInfo()">Atualizar escolha</button>
+          </div>
+        </div>
     </header>
     <div class="titulo">
-      <h1>Destaque da equipe de <span>Variavel1</span></h1>
+      <h1>Destaque da equipe <span class="equipe"></span></h1>
     </div>
 
     <main>
@@ -36,7 +73,7 @@
             alt=""
           />
           <div>
-            <img src="./src/imagens/source.unsplash.jpg" alt="" />
+            <img src="#" alt="" class="imagemTrocada" />
           </div>
         </div>
         <!--
@@ -66,12 +103,15 @@
       </div>
     </main>
     <div class="nome">
-      <h3><span>Variavel2</span></h3>
+      <h3><span class="nomeDoColab"></span></h3>
     </div>
     <footer>
       <p class="texto footer">
         Copyright © 2023 Equipe de TI Bandeirantes Deicmar.
       </p>
+      
+      <button id="show-card-btn">Atualizar Informação</button>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
