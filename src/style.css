@@ -127,3 +127,8 @@ img{
     top: 10px;
     right: 10px;
   }
+
+
+  .btn-close {
+     --bs-btn-close-white-filter: none !important;
+  }
